@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Images</title>
+    <link rel="stylesheet" href="h.css">
+    <title>Login Page</title>
 </head>
 <body>
-    <h1>Upload Your Images</h1>
-
-    <!-- File upload form -->
-    <input type="file" id="file-upload" multiple>
-    <button id="upload-btn">Upload Files</button>
-
-    <!-- Success or Error Message -->
-    <div id="message"></div>
-
-    <!-- Include AWS SDK -->
-    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1317.0.min.js"></script>
-
-    <!-- Load the script at the bottom for better performance -->
-    <script src="upload.js"></script>
+    <div>
+      <form class="container">
+        <h1 class="login-title">Login</h1>
+        <section class="input-box">
+          <input type="text" name="username" placeholder="Username">
+          <i class='bx bxs-user'></i>
+        </section>
+        <section class="input-box">
+          <input type="password" name="password" placeholder="Password">
+          <i class='bx bxs-lock-alt'></i>
+        </section>
+        <section class="remember-forgot-box">
+          <div class="rmeber-me">
+            <input type="checkbox" name="remember-me" id="remember-me">
+            <label for="remember-me">Remember me</label>
+          </div>
+          <a class="forgot-password" href="#">Forgot password?</a>
+        </section>
+        <button class="login-button" type="submit">Login</button>
+        <h5 class="dont-have-an-account">
+          Don't have an account? <a href="#"><b>Register</b></a>
+        </h5>
+      </form>
+    </div>
 </body>
 </html>
